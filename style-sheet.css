@@ -1,0 +1,309 @@
+     /* Styles for website counter container */
+.website-counter {
+    background-color: gold;
+    
+     width: auto;
+     color:black;
+     border-radius: 18px;
+     font-weight: 700;
+     font-size: 20px;
+     padding: 6px;
+    
+ 
+   } 
+         /* Category Ads */
+   #ads {
+       margin: 30px 0 30px 0;
+       margin-top: 100px;  
+   }
+   #ads .card-notify-badge {
+           position: absolute;
+           left: -10px;
+           top: -20px;
+           background: rgb(58, 57, 57);
+           text-align: center;
+           border-radius: 30px 30px 30px 30px; 
+           color: gold;
+           padding: 5px 10px;
+           font-size: 14px;     
+       }
+       #ads  .card-notify-year {
+           position: absolute;
+           right: -10px;
+           top: -20px;
+           margin-right: 75.5%;
+           background: rgb(58, 57, 57);
+           text-align: center;
+           border-radius: 30px 30px 30px 30px; 
+           color: gold;
+           padding: 5px 10px;
+           font-size: 14px;       
+   }
+   #ads .card-detail-badge {      
+           background: #f2d900;     
+           text-align: center;
+           border-radius: 30px 30px 30px 30px;
+           color: #000;
+           padding: 5px 10px;
+           font-size: 14px;          
+       }
+   #ads .card:hover {
+               background: rgb(209, 152, 7);
+               box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+               border-radius: 4px;
+               transition: all 0.3s ease;
+               background-color: gray;
+           }
+   #ads .card-image-overlay {
+           font-size: 20px;
+          background-color: black;
+       }
+   #ads .card-image-overlay span {
+               display: inline-block;              
+           }
+   #ads .ad-btn {
+           text-transform: uppercase;
+           width: 150px;
+           height: 40px;
+           border-radius: 80px;
+           font-size: 16px;
+           line-height: 35px;
+           text-align: center;
+           border: 3px solid #e6de08;
+           display: block;
+           text-decoration: none;
+           margin: 20px auto 1px auto;
+           color: #000;
+           overflow: hidden;        
+           position: relative;
+           background-color: #e6de08;    
+       }
+   #ads .ad-btn:hover {
+               background-color: #e6de08; 
+               border: 2px solid #e6de08;
+               background: transparent;
+               transition: all 0.3s ease;
+               box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+           }
+   #ads .ad-title h5 {
+           text-transform: uppercase;
+           font-size: 18px;
+       }
+       .b1{
+           padding-bottom: 20px;    
+       }
+       .popimg{
+           height: 110px;
+           width: 200px;
+           border-radius: 6px;
+           background-color: black;
+       }
+       .modal-footer{
+           background-color: rgb(66, 64, 64);
+       }
+       .modal-header{
+           background-color: rgb(66, 64, 64);
+           color: gold;
+       }
+       .modal-title{
+           font-weight: bold;
+           font-size: 25px;
+       }
+       .card-price{
+           color: gold;
+           font-size: 20px;
+           margin-right:250px;
+       }
+       .modal-content{
+           background-color: black;
+           color: darkgoldenrod;
+       }
+       .btn1{
+           font-weight: 500;
+           font-size: 20px;
+           background-color: gold;
+           border: none;
+           border-radius: 5px;
+           text-decoration: none;
+          margin-left: 60px;
+       }
+       .b1:hover{
+           text-decoration: none;
+           color: gold
+       }   
+       h2{
+           color: yellow;
+       }
+       .img-fluid{
+           height: 200px;
+           width: 350px;
+       }
+       .card-body{
+         background-color:rgb(83, 81, 81);
+       }
+   .nav-link:focus{
+    color: gray;
+   }
+    #myVideo {
+      left: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     height:100vh;
+     object-fit: cover;
+     min-width: 100%; 
+     min-height: 100%;
+   }
+           /* hero background image */
+   .bgimage {
+       height:101vh;
+       background-color:rgb(13, 14, 13);
+       background-size:cover;
+       position:relative;
+   }
+   /* services section css */
+   /* display background color black on navbar scroll */
+  
+   /* footer styling */
+   #footer {
+       background-color: #808080;
+       text-align: center;
+   }
+  
+   #contact {
+       padding-bottom: 4rem;
+   }
+   .navbar{
+       background-color: rgb(37, 37, 37);
+   }
+   .navbar-toggler{
+       color:goldenrod;
+   }
+   .navbar ul li a{
+       color: goldenrod;
+       font-size: 14px;
+      margin-right: 10px;
+      font-weight: 800;   
+   }
+   .navbar ul li a:hover{
+       color: gold;
+   }
+   #gallery{
+       background-color: rgb(36, 35, 35);
+   }
+   .text-center{
+       color: goldenrod;
+       font-family: cursive;
+       font-size: 50px;
+   }
+   .navbar-brand{
+       color: gold;
+       font-weight: 900;
+       font-size: 24px;
+       font-family: cursive;
+   }
+  
+   .navbar-brand:hover{
+    color: rgb(121, 101, 50);
+   }
+   .paragraph{
+     text-align: center;
+     color: yellow;
+     font-size: 17px;
+    }
+    #brands{
+       background-color: rgb(36, 35, 35);
+   
+    }
+    #newarrivals{
+       background-color:rgb(36, 35, 35) ;
+    }
+    #usedcars{
+       background-color:rgb(36, 35, 35)
+   
+    }
+    #whycarbreezy{
+       background-color:rgb(36, 35, 35)
+   
+    }
+    .butt{
+       background-color: goldenrod;
+       color: black;
+    }
+    .butt:hover{
+       background-color: gold;
+    }
+    .card{
+       background-color:rgb(83, 81, 81);
+    }
+    .card-img{
+       padding-left: -30px; }
+       .card-title{
+           text-align: center;
+           font-size: 35px;
+           color: goldenrod;
+       }
+       .card-text{
+           text-align: center;
+           font-size: 16px;
+           color: whitesmoke;
+           font-weight: 500;
+       }
+       #last1{
+        border-bottom: 2px solid gold;
+        padding: 40px;
+        margin-top: -10px;
+        background-color: rgb(36, 35, 35);
+        color: goldenrod;
+       font-size: 14px;
+       border-top:1px solid gold ;
+       }
+       .footer {
+        text-align: center;
+        padding: 20px;
+        background-color:rgb(36, 35, 35) ; 
+        color: gold;
+       }
+    .img-fluid{
+       height: 200px;
+    }
+    .card-img-top{
+     height: 200px;
+    }
+    .car1{
+     font-size: 27px;
+     color: gold;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+     }
+     a:hover{
+        color: gold;
+        text-decoration: none;
+     }
+     .text{
+        color: goldenrod;
+     }
+    .f1{
+        color: goldenrod;
+        font-size: 25px;
+    }  
+    .start{
+       margin-bottom: -30px;
+     
+       background-color: #000;
+    }
+    .fq{
+        margin-top: 70px;
+    }
+    .question{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .paragraph1{
+        color: whitesmoke;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 20px;
+    }

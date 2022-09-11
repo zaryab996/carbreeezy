@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarBreezy</title>
+    <link rel="icon" type="image" href="images/2.png">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- crousal -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-03/css/owl.carousel.min.css">
+<link rel="stylesheet" href="carousel-03/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+<link rel="stylesheet" href="carousel-03/css/style.css">
+<!-- end crousal -->
+<link rel="stylesheet" href="bootstrap.css">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<!-- tags end -->
+<script defer src="index.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Style -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style-sheet.css">   
+</head>
+<body class="start" >
+    <nav class="navbar navbar-expand-lg  fixed-top navbarScroll">
+        <div class="container">
+          <!-- logo -->
+            <a class="navbar-brand" href="#">CARBREEZY</a>
+              <!-- end -->
+              
+              <!-- counter -->
+             </a> <div class="website-counter"></div>
+             <script>
+             var counterContainer = document.querySelector(".website-counter");
+         var resetButton = document.querySelector("#reset");
+         var visitCount = localStorage.getItem("page_view");
+         // Check if page_view entry is present
+         if (visitCount) {
+           visitCount = Number(visitCount) + 1;
+           localStorage.setItem("page_view", visitCount);
+         } else {
+           visitCount = 1;
+           localStorage.setItem("page_view", 1);
+         }
+         counterContainer.innerHTML = visitCount;
+         // Adding onClick event listener
+         resetButton.addEventListener("click", () => {
+           visitCount = 1;
+           localStorage.setItem("page_view", 1);
+           counterContainer.innerHTML = visitCount;
+         });
+             </script>
+             <!-- end -->
+             <!-- navbar -->
+            <button class="navbar-toggler navbar-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon  " ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brands">Brands</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#newarrivals">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usedcars">Used Cars </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal44">Sale Your Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whycarbreezy">Why CarBreezy!</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal33" >Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  >Login</a> 
+                    </li>
+                </ul>
+                 </div>
+            </div>
+    </nav>
+    <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel1">LOGIN</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+           <div class="container-fluid">
+            <div class="container">
+              <form action="">
+              <label for="uname"><b>Username:</b></label><br>
+              <input type="text" placeholder="Enter Username" name="uname" pattern="[A-Z a-z0-9]{2,20}" title="Enter Username" required><br>
+        
+              <label for="psw"><b>Password:</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw"  required><br><br>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> <br>
+              <button type="submit"   class="btn btn-dark"  style="color:black;background-color: goldenrod;"> Login</button><br><br>
+              </form>
+            </div>
+        </div>
+         </div>
+         </div>
+        </div>            
+      </div>
+      <!-- signup -->
+      <div class="modal fade" id="exampleModal33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel1">SIGNUP</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+             <div class="container-fluid">
+              <div class="container">
+                <form action="">
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="Enter Your Name" name="name" required pattern="[A-Z a-z]{2,20}"  placeholder="Enter Your Name" title="Enter Your Name"><br>
+                <label for="country-code">E-mail:</label><br>
+                <input type="email" id="" name="" pattern='[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{2,10}.(es|com|org)' required placeholder="Enter Your e-mail" title="email"><br>
+          
+                <label for="psw"><b>Password:</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+                  
+                <button type="submit"   class="btn btn-dark"  style="color:black;background-color: goldenrod;"> Signup</button><br><br>
+                </form>
+                 
+              </div>
+          </div>
+           </div>
+           </div>
+          </div>            
+        </div>
+        <!-- sale your car -->
+        <div class="modal fade" id="exampleModal44" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel1">SALE YOUR CAR</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <div class="container-fluid">
+                <div class="container">
+                  <form action="">
+                  <label for="uname"><b>Name:</b></label><br>
+                  <input type="text" id="Enter Your Name" name="name" required pattern="[A-Z a-z]{3,15}" placeholder="Enter Your Name"><br>
+                  <label for="country-code">E-mail:</label><br>
+                  <input type="email" id="" name="" pattern='[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{2,10}.(es|com|org)' required title="email" placeholder="Enter Your E-mail"><br>
+                  <label for="name">Car Name / Model:</label><br>
+                  <input type="text" id="enter your car name" name="car name"  required pattern="[A-Za-z0-9]{3,30}" title="Enter Your car Name" placeholder="Enter car name / model" ><br>
+                  <label for="phone">Mobile No.</label><br>
+                  <input type="tel" name="phone" id="phone" placeholder="0***-*******" pattern="[0-9]{4}-[0-9]{7}"><br>
+                  <label for="myfile">Add Photos:</label><br>
+                  <input type="file" id="myfile" name="myfile" multiple><br><br>
+                  <label>
+                  <button type="submit"   class="btn btn-dark"  style="color:black;background-color: goldenrod;"> Sale Now</button><br><br>
+                  </form>
+                </div>
+            </div>
+             </div>
+             </div>
+            </div>            
+          </div>
+          <!-- end -->
+     <!-- main banner -->
+     <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <video autoplay muted loop id="myVideo">
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+    <!-- gallery section-->
+    <section id="gallery">
+        <div class="container pt-3 ">
+            <h1 class="text-center">Gallery</h1>
+            <p class="paragraph">Come and See what we offer<br>
+                Eye it – try it – buy it!</p>
+            <div class="row  ">
+                
+                    <div class="container mt-3">
+                        <div class="row">
+                           
+                            <div class="col-md-12 ">
+                                <div class="featured-carousel owl-carousel">
+                                    <div class="item">
+                                        <div class="work">
+                                            <div class="img d-flex align-items-end justify-content-center" style="background-image: url(images/bugati.jpg);">
+                                                <div class="text w-100">
+                                                    <span class="cat">Coming Soon</span>
+                                                    <h3><a style="color:gold ;" >Bugati</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="work">
+                                            <div class="img d-flex align-items-end justify-content-center" style="background-image: url(images/ferrari.jpg);">
+                                                <div class="text w-100">
+                                                    <span class="cat">Coming Soon</span>
+                                                    <h3><a style="color:gold ;" >Ferrari</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="work">
+                                            <div class="img d-flex align-items-end justify-content-center" style="background-image: url(images/fortuner.jpg);">
+                                                <div class="text w-100">
+                                                    <span class="cat">Coming Soon</span>
+                                                    <h3><a style="color:gold ;" >Fortuner</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="work">
+                                            <div class="img d-flex align-items-end justify-content-center" style="background-image: url(images/rolls\ royc.jpg);">
+                                                <div class="text w-100">
+                                                    <span class="cat">Coming Soon</span>
+                                                    <h3><a style="color:gold ;">Rolls / Royce</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="work">
+                                            <div class="img d-flex align-items-end justify-content-center" style="background-image: url(images/wow6.jpg);">
+                                                <div class="text w-100">
+                                                    <span class="cat">Coming Soon</span>
+                                                    <h3><a style="color:gold ;" >B.M.W</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+        
+            <script src="carousel-03/js/jquery.min.js"></script>
+            <script src="carousel-03/js/popper.js"></script>
+            <script src="carousel-03/js/bootstrap.min.js"></script>
+            <script src="carousel-03/js/owl.carousel.min.js"></script>
+            <script src="carousel-03/js/main.js"></script> 
+            </div>
+        </div>
+    </section>
+    <!-- brands section-->
+    <section id="brands">
+        <div class="container">
+            <h1 class="text-center">Brands</h1>
+            <div class="row">
+                    <div class="site-section bg-left-half mb-5 mt-5">
+                      <div class="container owl-2-style ">
+                        <div class="owl-carousel owl-2">
+                          <div class="media-29101">
+                            <a href="audi.html"><img  src="images/audi11.png" alt="Image" class="img-fluid"></a>
+                          </div>
+
+                          <div class="media-29101">
+                            <a href="ferrari.html"><img src="images/logo1-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                          </div>
+
+                          <div class="media-29101">
+                            <a href="rolls royc.html"><img src="images/Rlogo-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                          </div>
+
+                          <div class="media-29101">
+                            <a href="bmw.html"><img src="images/bmww.png     " alt="Image" class="img-fluid"></a>
+                          </div>
+
+                          <div class="media-29101">
+                            <a href="porcshe 1.html"><img src="images/Plogo-removebg-preview (2).png" alt="Image" class="img-fluid"></a>
+                          </div>
+
+                          <div class="media-29101">
+                            <a href="lamborghini.html"><img src="images/Llogo-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                        </div>
+                
+                            <div class="media-29101">
+                                <a href="honda.html"><img src="images/Hlogo-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                              </div>
+
+                              <div class="media-29101">
+                                <a href="nissan.html"><img src="images/N1logo-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                              </div>
+
+                              <div class="media-29101">
+                                <a href="toyota.html"><img src="images/Tlogo-removebg-preview.png" alt="Image" class="img-fluid"></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                    <script src="js/jquery-3.3.1.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/owl.carousel.min.js"></script>
+                    <script src="js/main.js"></script>
+                </div>
+            </div>
+        
+    </section>
+<!-- NEW ARRIVALS section-->
+<section id="newarrivals">
+    <div class="container ">
+        <h1 class="text-center">New Arrivals</h1>
+        <div class="row">
+          <hr class="my-4 ">
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                    
+                         src="images/le-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Lamborghini Estoque</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>  
+                  </div>
+                </div>
+                 <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel1">Lamborghini Estoque</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <div class="container-fluid">
+                     <div class="row">
+                       <div  class="col-md-6">
+                           <img class="popimg" src="images/le-removebg-preview.png" alt="">
+                       </div>
+                       <div class="col-md-6 ">
+                           <img class="popimg" src="images/l1.png" alt="">
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              <li>DISPLACEMENT: 6,498 cm³ (396.5 cu in)</li>
+                              <li>MAX. POWER:819 CV (602 kW) @ 8,500 rpm</li>
+                              <li>MAX. SPEED:>350 km/h (217 mph)</li>
+                       </ul>
+                       </div>
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              <li>ACCELERATION 0-100 KM/H (0-62 MPH)</li>
+                              <li> COMBINED CONSUMPTION :12,7 l/100km</li>
+                       </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div  class="modal-footer">
+                  <div class="card-price" style="margin-right: 267px;">
+                      $245,000
+                   </div>
+                   <button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                 </div>
+                 </div>
+                </div>            
+              </div>
+       
+        <!-- end -->
+        
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/audi-removebg-preview (1).png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Audi E Tron GT 240p </h4>
+                     
+                        <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="color:rgb(53, 51, 51);">
+                          Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Audi e tron GT </h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/audi-removebg-preview (1).png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/audie.jpg" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>Power: 819 hp @ 9,250 rpm</li>
+                              
+                                      <li>Torque: 510 lb-ft @ 7,000 rpm</li>
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>0-60 mph: 2.6 s</li>
+                                      <li>Top Speed: 212 mph</li>
+                               </ul>
+                           </div> 
+                         </div>
+                          <div class="row">
+                           <div class="col-md-12 ">   
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price" style="margin-right: 267px;">
+                          $61,570
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                       
+                     </div>
+                           </div>
+                       </div>
+                       </div>
+           
+            <!-- end -->
+        
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/bmw0-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1"> BMW I8 Roadster</h4>
+                     
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">
+                       BMW I8 ROADSTER</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/bmw0-removebg-preview.png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/bmw11-removebg-preview.png" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  
+                                  <li>Engine	1998 to 2998 cc</li>
+                          
+                                  <li>Power and Torque	194 to 375 bhp & 320 to 500 Nm View More</li>
+                                  
+                                  <li>0-60 mph: 3.9 s</li>     
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>DriveTrain	RWD
+                                     Width: 80.2 in</li>
+                                <li>Acceleration	4.5 to 6.6 seconds</li>
+                           </ul>                
+                          </div>                         
+                         </div>                                             
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                       $147,500
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22" data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>                      
+                     </div>
+                           </div>
+                       </div>
+                       </div>
+            <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/honda-civic-si-sedan-2017-1024x683-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Honda Civic si sedan</h4>
+                      
+                        <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="color:rgb(53, 51, 51);">
+                          Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel1">Honda civic si sedan</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/honda-civic-si-sedan-2017-1024x683-removebg-preview.png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/r7.jpg" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text"> 
+                                  <li>Power: 819 hp @ 9,250 rpm</li>                             
+                                      <li>Torque: 510 lb-ft @ 7,000 rpm</li>                             
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>0-60 mph: 2.6 s</li>                              
+                                      <li>Top Speed: 212 mph</li>
+                           </ul>            
+                           </div>                     
+                         </div>               
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                          $61,570
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button> 
+                     </div>
+                           </div>
+                       </div>
+                       </div>
+            <!-- end -->
+              </div>
+              <!--/.First slide-->
+              <!--Second slide-->
+              <div class="carousel-item">
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/fdg-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Ferrari Daytona SP3</h4>
+                     
+                        <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="color:rgb(53, 51, 51);">
+                          Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel1">Ferrari Daytona SP3 </h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <div class="container-fluid">
+                 <div class="row">
+                   <div  class="col-md-6">
+                       <img class="popimg" src="images/fdg-removebg-preview.png" alt="">
+                   </div>
+                   <div class="col-md-6 ">
+                       <img class="popimg" src="images/Untitled design (3).png" alt="">
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-md-6 ">
+                       <ul class="card-text">
+                          <li>Engine: 6.5L naturally aspirated V12</li>
+  
+                  <li>Power: 829 hp @ 9,250 rpm</li>
+  
+                   <li>Torque: 514 lb-ft @ 7,000 rpm</li>     
+                   </ul>
+                   </div>
+                   <div class="col-md-6 ">
+                       <ul class="card-text">     
+                        
+                   <li>0-60 mph: 2.86 s</li>
+  
+                   <li>0-124 mph: 7.4 </li>
+  
+                  <li>Top Speed: 211 mph</li>
+                   </ul>
+                   </div> 
+                 </div>
+               </div>
+             </div>
+             <div  class="modal-footer">
+              <div class="card-price"   style="margin-right: 267px;" >
+                  $2,250,000
+               </div>
+               <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+             </div>
+                   </div>
+               </div>
+                   </div>
+        <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/note-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Nissan Note A556</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal6" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel1">Nissan Note A5</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/note-removebg-preview.png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/note-removebg-previewright.jpg" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text"> 
+                                  <li>Power: 819 hp @ 9,250 rpm</li>
+                                    <li>Torque: 510 lb-ft @ 7,000 rpm</li>
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>0-60 mph: 2.6 s</li>
+                                      <li>Top Speed: 212 mph</li>
+                           </ul>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                          $61,570
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>  
+                     </div>
+                           </div>
+                       </div>
+                       </div>
+           
+            <!-- end -->
+        
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/rp-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Rolls-Royce Phantom</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal7" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                 <!-- Modal -->
+            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel1">    Rolls-Royce Phantom</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <div class="container-fluid">
+                     <div class="row">
+                       <div  class="col-md-6">
+                           <img class="popimg" src="images/rp-removebg-preview.png" alt="">
+                       </div>
+                       <div class="col-md-6 ">
+                           <img class="popimg" src="images/1.png" alt="">
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              <li> Wheelbase	3,552 mm (139.8 in) (SWB) 3,772 mm (148.5 in) (EWB)</li>
+                          <li>Length	5,762 mm (226.9 in) (SWB) 5,982 mm (235.5 in) (EWB)</li>
+                          <li>Width	2,018 mm (79.4 in)</li>   
+                       </ul>
+                       </div>
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              <li>Height	1,646 mm (64.8 in) (SWB) 1,656 mm (65.2 in) (EWB)</li>
+                              <li>MAX. SPEED:>350 km/h (217 mph)</li>       
+                             <li>ACCELERATION 0-100 KM/H (0-62 MPH)</li>
+                       </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div  class="modal-footer">
+                  <div class="card-price" style="margin-right: 267px;">
+                      $450,000
+                   </div>
+                   <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                 </div>
+                       </div>
+                   </div>
+                       </div>
+           
+            <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/images__2_-removebg-preview (1).png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Porsche  Turbo GT</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal8" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel1"> Porsche Cayenne Turbo GT</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/images__2_-removebg-preview (1).png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/images__22_-removebg-preview (1).png" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  
+                                  <li>Engine: 3.6L twin-turbo V8</li>
+                          
+                                  <li>Torque: 580 lb-ft @ 3000 rpm</li>
+                                  
+                                  <li>0-60 mph: 3.9 s</li>
+                               
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>0-124 mph: 10.4 s</li>
+                
+                                <li>Top Speed: 210 mph</li>
+                           </ul>
+                           </div>                           
+                         </div>                      
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                          $129,900
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                       
+                     </div>
+                           </div>
+                       </div>
+                       </div>
+              </div>
+              <!--/.Second slide-->
+            </div>
+          </div>
+        </hr>
+            </div>
+        </div>
+        <!-- end -->
+</section>
+<!-- used cars section-->
+<section id="usedcars">
+    <div class="container pt-3 ">
+        <h1 class="text-center ">Used Cars</h1>
+        <div class="row">
+          <hr class="my-5">
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/a4-720x405px-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Audi A4 Lite (2014) </h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal9" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">Audi A4
+                          
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div  class="col-md-6">
+                                  <img class="popimg" src="images/a4-720x405px-removebg-preview.png" alt="">
+                              </div>
+                              <div class="col-md-6 ms-auto">
+                                  <img class="popimg" src="images/audia4r.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 ms-auto">
+                                  <ul class="card-text">
+                                  <li>Engine: 6.5 L nat asp V12</li>
+              
+                                  <li>Power: 810 bhp @ 8500 rpm</li>
+              
+                                  <li>Torque: 530 lb-ft @ 7000 rpm</li> 
+                              </ul>
+                              </div>
+                              <div class="col-md-6 ms-auto">
+                                  <ul class="card-text">
+                                  <li>0-100 mph: < 8 sec (est)</li>
+                                  <li>Top Speed: 186 mph</li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div  class="modal-footer">
+                          <div class="card-price"  style="margin-right: 267px;">
+                              $1,800,000
+                          </div>
+                          <button  type="button" class="btn btn-dark"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                          
+                        </div>
+                              </div>
+                          </div>
+               </div> 
+                <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/TOYOTA4-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Carolla le Sedan (2010)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal10" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">CAROllA lE SEDAN 2010
+                        
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div  class="col-md-6">
+                                <img class="popimg" src="images/TOYOTA4-removebg-preview.png" alt="">
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <img class="popimg" src="images/TOYOTA44-removebg-preview.png" alt="">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 ms-auto">
+                                <ul class="card-text">
+                                   <li>0-60 mph: 5.6 s</li>
+                                   <li>0-124 mph: 4.0 s</li>
+                                    <li>
+                                     Fuel Type: Petrol & Diesel</li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <ul class="card-text">
+                                   <li>Engine: 1995 to 2993 cc
+                                   </li>
+                                  <li>
+                                   Top Speed: 235 to 250 kmph
+                                  </li>
+                                     <li>Top Speed: 212 mph</li>  
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div  class="modal-footer">
+                        <div class="card-price"  style="margin-right: 267px;">
+                            $1,780,000
+                        </div>
+                        <button  type="button" class="btn btn-dark"   data-bs-toggle="modal" data-bs-target="#exampleModal22" data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                        
+                      </div>
+                            </div>
+                        </div>
+             </div> 
+              <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/bmw4-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">BMW 5 Series (2012)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal11" style="color:rgb(53, 51, 51);">
+                        Explore</button>  
+                    </div>
+                  </div>
+                </div>
+                 <!-- Modal -->
+              <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">BMW 5 SERIES 2012
+                        
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div  class="col-md-6">
+                                <img class="popimg" src="images/bmw4-removebg-preview.png" alt="">
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <img class="popimg" src="images/bmw44-removebg-preview.png" alt="">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 ms-auto">
+                                <ul class="card-text">
+                                    <li>Engine: 1995 to 2993 cc
+                                     </li>
+                                    <li>
+                                     Top Speed: 235 to 250 kmph
+                                    </li>
+                                    <li>
+                                     Fuel Type: Petrol & Diesel</li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <ul class="card-text">
+                                    <li>0-60 mph: 5.6 s</li>
+
+                                    <li>0-124 mph: 4.0 s</li>
+                                
+                                     <li>Top Speed: 212 mph</li> 
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div  class="modal-footer">
+                        <div class="card-price"  style="margin-right: 267px;">
+                            $1800.00
+                        </div>
+                        <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                        
+                      </div>
+                            </div>
+                        </div>
+             </div> 
+              <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/ff-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Ferrari SF90 Stradale (2015)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal12" style="color:rgb(53, 51, 51);">
+                        Explore</button> 
+                    </div>
+                  </div>
+                </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel6"> Ferrari SF90 Stradale</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="container-fluid">
+                           <div class="row">
+                             <div  class="col-md-6">
+                                 <img class="popimg" src="images/ff-removebg-preview.png" alt="">
+                             </div>
+                             <div class="col-md-6 ">
+                                 <img class="popimg" src="images/Untitled design (4).png" alt="">
+                             </div>
+                           </div>
+                           <div class="row">
+                             <div class="col-md-6 ">
+                                 <ul class="card-text">
+                                    <li>Engine: 4.0L TT V8 + 3 electric</li>
+                                <li>Power: 989 hp (combined)</li>
+                                <li>Torque: 590 lb-ft</li>
+                             </ul>
+                             </div>
+                             <div class="col-md-6 ">
+                                 <ul class="card-text">
+                                    <li>0-60 mph: 2.5 s</li>
+                                    <li>0-124 mph: 6.7 s</li> 
+                                    <li>Top Speed: 211 mph</li>
+                                 </ul>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div  class="modal-footer">
+                        <div class="card-price"  style="margin-right: 267px;">
+                            $507,000
+                         </div>
+                         <button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                       </div>
+                             </div>
+                         </div>
+                         </div> 
+                          <!-- end -->
+              </div>
+              <!--/.First slide-->
+        
+              <!--Second slide-->
+              <div class="carousel-item">
+        
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/luc-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Lamborghini Pearl (2018)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal13" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                 <!-- Modal -->
+            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel5">Lamborghini Urus Pearl</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <div class="container-fluid">
+                     <div class="row">
+                       <div  class="col-md-6">
+                           <img class="popimg" src="images/luc-removebg-preview.png" alt="">
+                       </div>
+                       <div class="col-md-6 ">
+                           <img class="popimg" src="images/l4.png" alt="">
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              
+                          <li>DISPLACEMENT:3,996 cm³ (243.85 cu in)</li>
+                          <li>MAX. POWER:650 CV (478 kW) @ 6,000 rpm</li>
+                              <li>TOP SPEED:305 km/h </li>
+                       </ul>
+                       </div>
+                       <div class="col-md-6 ">
+                           <ul class="card-text">
+                              <li>ACCELERATION 0-100 KM/H (MPH 0-62):3.6 s</li>
+                              <li>NUMBER OF CYLINDERS:8</li>
+                       </ul>
+                       </div>
+                      </div>
+                   </div>
+                 </div>
+                 <div  class="modal-footer">
+                  <div class="card-price"  style="margin-right: 267px;">
+                      $239,231
+                   </div>
+                   <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                   
+                 </div>
+                       </div>
+                   </div>
+            </div> 
+                        <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/2021_honda_accord-hybrid_sedan_touring_fq_oem_1_1600-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Accord hybrid sedan (2019)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal14" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">Accord hybrid sedan
+                          
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div  class="col-md-6">
+                                  <img class="popimg" src="images/2021_honda_accord-hybrid_sedan_touring_fq_oem_1_1600-removebg-preview.png" alt="">
+                              </div>
+                              <div class="col-md-6 ms-auto">
+                                  <img class="popimg" src="images/right3.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 ms-auto">
+                                  <ul class="card-text">
+                                  <li>Engine: 6.5 L nat asp V12</li>
+                                  <li>Power: 810 bhp @ 8500 rpm</li>
+                                  <li>Torque: 530 lb-ft @ 7000 rpm</li>  
+                              </ul>
+                              </div>
+                              <div class="col-md-6 ms-auto">
+                                  <ul class="card-text">
+                                  <li>0-100 mph: < 8 sec (est)</li>
+                                  <li>Top Speed: 186 mph</li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div  class="modal-footer">
+                          <div class="card-price"  style="margin-right: 267px;">
+                              $1,800,000
+                          </div>
+                          <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                          
+                        </div>
+                              </div>
+                          </div>
+               </div> 
+                <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/rd-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">Rolls Royce Dawn (2015)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal15" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                 <!-- !-- Modal --> 
+                 <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel5"> Rolls Royce Dawn</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/rd-removebg-preview.png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/5.png" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>DISPLACEMENT:3,996 cm³ (243.85 cu in)</li>
+                                  <li>MAX. POWER:650 CV (478 kW) @ 6,000 rpm</li>
+                                  <li>Width	2,019 mm (80.8 in)</li>
+                               
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>TOP SPEED:305 km/h </li>
+                                  <li>ACCELERATION 0-100 KM/H (MPH 0-62):3.6 s</li>
+                                      <li>NUMBER OF CYLINDERS:8</li>
+                           </ul>
+                           </div> 
+                         </div>
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                          $359,250
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                       
+                     </div>
+                           </div>
+                       </div>
+                       </div> 
+                        <!-- end -->
+                <div class="col-md-3" style="float:left">
+                  <div class="card mb-2">
+                    <img class="card-img-top"
+                         src="images/download__7_-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title car1">  Porsche Cayenne (2010)</h4>
+                      <button type="button" class="btn1 btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal16" style="color:rgb(53, 51, 51);">
+                        Explore</button>
+                    </div>
+                  </div>
+                </div>
+                 <!-- <---! Modal -->
+                 <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel5">
+                      2010 Porsche Cayenne </h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                         <div class="row">
+                           <div  class="col-md-6">
+                               <img class="popimg" src="images/download__7_-removebg-preview.png" alt="">
+                           </div>
+                           <div class="col-md-6 ">
+                               <img class="popimg" src="images/download__77_-removebg-preview.png" alt="">
+                           </div>
+                         </div>
+                         <div class="row">
+                           <div class="col-md-6 ">
+                               <ul class="card-text">
+                                  <li>Engine: 3.9L twin-turbo V8</li>
+                              <li>Power: 612 hp @ 7,500 rpm</li>
+                              <li>Torque: 560 lb-ft @ 3000 rpm</li> 
+                           </ul>
+                           </div>
+                           <div class="col-md-6 ">
+                               <ul class="card-text">   
+                              <li>0-60 mph: 3.4 s</li>
+                              <li>0-124 mph: 9.3 s</li>     
+                               </ul>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div  class="modal-footer">
+                      <div class="card-price"  style="margin-right: 267px;">
+                          $245,000
+                       </div>
+                       <button  type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#exampleModal22"  data-bs-dismiss="modal" style="color:black;background-color: gold;">Buy Now</button>
+                       
+                     </div>
+                           </div>
+                       </div>
+                       </div> 
+                        <!-- end -->
+              </div>
+              <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+          </div>
+        </hr>
+          <!--/.Carousel Wrapper-->
+            </div>
+        </div>
+</section>
+<!-- used cars section-->
+<section id="whycarbreezy">
+    <div class="container ">
+        <h1 class="text-center pt-5">Why CarBreezy!</h1>
+        <p class="paragraph mt-4">When you're here, you're in the driver's seat.</p><br>
+        <div class="row">
+             <img class="why" src="images/why1.jpg" alt="">
+           <br><br>
+           <p class="paragraph mt-4"> Your car buying destiny is in your hands, but we will help you every step of the way.<br> We built this site to make car buying as fast and easy as possible.<br> Reinvent how you buy, do it online in 15 minutes or less with CarBreezy. </p>
+           
+            </div>
+            <div class="card mb-0 mt-5" style="max-width: 100%;">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img src="images/card1.jpg" class="card-img" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title  mt-3 ">Our First priority is People</h5>
+                    <p class="card-text mt-2">We like to think of ourselves as people-people.<br> That's why we built CarBreezy around you. No Pressure, no commissions, no hidden fees,<br> just smiling faces every step of the way.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card  mb-3 mt-5" style="max-width: 100%;">
+              <div class="row">
+               
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title  mt-3 ">You're CarBreezy Covered</h5>
+                    <p class="card-text mt-2">Relax, don't do it,<br> when you wanna go do it... don't stress out!<br> You're protected by our lifetime powertrain warranty!</p>  
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="images/card2.jpg" class="card-img" alt="">
+                </div>
+              </div>
+            </div>
+            <h1 class="text-center pt-4">Contact Me</h1>
+            <div class="row mt-5 pb-4 ">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="mymap-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=liaquatabad&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="codefor-google-map" rel="nofollow" href="https://www.embed-map.com" id="enablemap-info">https://www.embed-map.com</a><style>#mymap-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form action="">
+                        <input type="text" class="form-control form-control-lg"  pattern="[A-Z a-z0-9]{2,20}" placeholder="Name" required>
+                        <input type="email" class="form-control mt-3" placeholder="Email" pattern='[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{2,10}.(es|com|org)' required>
+                        <input type="text" class="form-control mt-3" placeholder="Reason" required>
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder=" Details" required></textarea>
+                        </div>
+                    
+                        <button type="submit"   class="btn btn-dark"  style="color:black;background-color: goldenrod;"> Contact Now</button><br><br>
+                  </form>
+                </div>
+    
+            </div>
+        </div>
+</section>
+<div class=" container-fluid  pb-4 " id="last1">
+    <div class="row last">
+      <div class="col-md-2">
+        <h1 class="car1">Locations</h1>
+       <div>Karachi</div>
+       <div>Lahore</div>
+        <div>Faislabad</div>
+        <div>Islamabad</div>
+        <div>Multan</div>
+        <div>Hyderabad</div>
+      
+        
+      </div>
+      <div class="col-md-3">
+        <h1 class="car1">Quick Links</h1>
+        <h2>Brands</h2>
+        <a href="audi.html"><div>Audi</div></a>
+        <a href="ferrari.html"><div>Ferrari</div></a>
+        <a href="rolls royc.html">Rolls/Royc<div></div></a>
+        <a href="bmw.html"><div>B.M.W</div></a>
+        <a href="honda.html"><div>Honda</div></a>
+      </div>
+      <div class="col-md-3">
+      <h1 class="car1">Quick Links</h1>
+      <h2>Brands</h2>
+      <a href="lamborghini.html"><div>Lamborghini</div></a>
+      <a href="nissan.html"><div>Nissan</div></a>
+      <a href="toyota.html"><div>Toyota</div></a>
+      <a href="porcshe 1.html"><div>Porsche</div></a>
+      <div> Bugati (Coming Soon)</div>
+     
+    
+    </div>
+      <div class="col-md-2">
+        <h1 class="car1">Contact info</h1>
+       <div>+92303-2563283</div>
+        <div>+92345-1279055</div>
+        <div>+923-352246349</div>
+       <div>khanzar996@gmail.com</div>
+        <div>fabihajawad@gmail.com</div>
+        <div>Karachi,pakistan</div>
+      </div>
+      <div class="col-md-2">
+        <h1 class="car1">Other Links</h1>
+        <a href="sitemap.html">Site Map</a><br>
+        <a href="FAQ.html">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="footer ">COPYRIGHT @ 2022 BY MR.ZARYAB</p>
+    
+  </div>
+
+ 
+</body>
+</html>
